@@ -325,7 +325,6 @@
                 <h2 class="text-2xl font-semibold text-[#34658F] mb-4 text-center">تحلیل گردشگران</h2>
                 <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto">این بخش به بررسی ویژگی‌های جمعیتی و رفتاری گردشگران در کشورهای مختلف می‌پردازد. می‌توانید با کلیک بر روی هر کارت، جزئیات بیشتری را مشاهده کنید.</p>
                 <div id="global-tourist-stats-card" class="bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded-lg shadow mb-6">
-                     <!--  
                     <h3 class="text-xl font-bold mb-2">آمار جهانی گردشگران</h3>
                     <p><strong>مقصدهای برتر:</strong> <span id="global-top-destinations"></span></p>
                     <p><strong>اهداف سفر:</strong> <span id="global-travel-purposes"></span></p>
@@ -334,7 +333,6 @@
                     <p><strong>ترکیب جمعیتی:</strong> <span id="global-demographics"></span></p>
                 </div> 
                 <div id="tourist-analysis-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    -->
                     <!-- Tourist analysis country cards will be rendered here -->
                 </div>
             </div>
@@ -3780,6 +3778,7 @@
             applyRankingFilters();
 
             // --- Tourist Analysis Tab Functions ---
+            /*
             function renderGlobalTouristStats() {
                 document.getElementById('global-top-destinations').textContent = globalTouristStats.topDestinations;
                 document.getElementById('global-travel-purposes').textContent = Object.entries(globalTouristStats.travelPurposes).map(([key, value]) => `${key}: ${value}%`).join(', ');
@@ -3787,6 +3786,7 @@
                 document.getElementById('global-economic-levels').textContent = Object.entries(globalTouristStats.economicLevels).map(([key, value]) => `${key}: ${value}%`).join(', ');
                 document.getElementById('global-demographics').textContent = Object.entries(globalTouristStats.demographics).map(([key, value]) => `${key}: ${value}%`).join(', ');
             }
+            */
 
             function renderTouristAnalysisCards(data) {
                 touristAnalysisGrid.innerHTML = '';
