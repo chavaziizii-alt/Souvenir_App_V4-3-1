@@ -2901,16 +2901,8 @@
 
         // Global Tourist Statistics Calculation
 
-const globalTouristStats = {
-    topDestinations: {},
-    travelPurposes: { "کسب و کار": 0, "تحصیلات": 0, "تفریح": 0, "خانواده و دوستان": 0, "مذهبی": 0 },
-    ageGroups: { '<25': 18, '25-44': 36, '45-64': 28, '65+': 18 },
-    economicLevels: { "لاکچری": 13, "ثروتمند": 27, "سطح متوسط": 38, "سطح پایین": 22 },
-    demographics: { "بازنشسته": 2, "زوج": 28, "شخص": 32, "گروهی": 14, "خانوادگی": 26 },
-    totalCountries: touristAnalysisData.length
-};
         
-      /*  const globalTouristStats = {
+        const globalTouristStats = {
             topDestinations: {},
             travelPurposes: { business: 0, education: 0, leisure: 0, family: 0 },
             ageGroups: { '18-25': 0, '26-40': 0, '41-60': 0, '60+': 0 },
@@ -2918,7 +2910,7 @@ const globalTouristStats = {
             demographics: { retired: 0, couples: 0, solo: 0, youth: 0, family: 0 },
             totalCountries: touristAnalysisData.length
         };
-*/
+
         touristAnalysisData.forEach(data => {
             data.topDestinations.forEach(dest => {
                 globalTouristStats.topDestinations[dest] = (globalTouristStats.topDestinations[dest] || 0) + 1;
